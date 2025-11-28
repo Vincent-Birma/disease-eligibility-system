@@ -25,8 +25,8 @@
 	<div class ='row'>
 		<div style = "background-image:url({{url_for('static',filename='img.jpg')}})" id= 'divs'class ='col-md-6'></div>
 		<div class ='col-md-6 bg-danger'>
-			<h1 class ='text-light'>Disease Prediction System</h1>
-			<form method = 'POST' action ='/prediction'>
+			<h1 class ='text-light'>Disease Outcome Prediction System</h1>
+			<form method = 'POST' action ='/predictions'>
 				<div class ='form-group'>
 					<label>Do you have a fever</label>
 					<select class = 'form-control' name ='fever'>
@@ -83,7 +83,7 @@
 				</div>
 				<button class ='btn btn-primary'>Check Status</button>
 				{% if encode %}
-				<h3>{{encode}}</h3>
+				<h3 style="color: white">{{encode}}</h3>
 				{% endif %}
 			</form>
 		</div>
