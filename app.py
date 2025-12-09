@@ -49,7 +49,7 @@ def predictions():
 			prediction = model.predict(input_data)
 			return render_template('index.html',encode =f'Possible outcome of disease: {prediction}')
 		except Exception as e:
-			return render_template('index.html', encode =f'Error :{e}')
+			return render_template('index.html', encode =f'Error :Wrong or empty field')
 
 if __name__ == '__main__':
 	app.run(debug=True)
